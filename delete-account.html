@@ -1,9 +1,25 @@
 <!doctype html>
-<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>حذف حساب فسيلة</title><link rel="stylesheet" href="styles.css"></head>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#4F46E5"><title>حذف حساب فسيلة</title><link rel="icon" type="image/png" href="assets/icon.png"><link rel="stylesheet" href="styles.css"></head>
 <body><nav class="site-nav"><div class="wrap nav-inner"><a class="brand" href="support.html"><img src="assets/icon.png" alt=""><span>دعم فسيلة</span></a><div class="nav-links"><a href="privacy.html">الخصوصية</a><a href="terms.html">الشروط</a></div></div></nav>
 <main class="wrap legal"><p class="eyebrow">تحكّم في بياناتك</p><h1>حذف حساب فسيلة</h1><p>يمكنك طلب حذف الحساب والبيانات المرتبطة به حتى بعد إزالة التطبيق من هاتفك.</p>
-<h2>الخطوات</h2><ol><li>اضغط زر إرسال الطلب أدناه.</li><li>أرسل الرسالة من البريد نفسه المستعمل للدخول إلى فسيلة حتى نتحقق من ملكية الحساب.</li><li>سنؤكد استلام الطلب ونطلب أقل قدر من المعلومات اللازمة للتحقق.</li><li>بعد التحقق، نحذف حساب Supabase والملف وحالة الوصول وإحصاءات التدريب المرسلة وطلبات الدعم المرتبطة به خلال 30 يوماً، إلا إذا فرض القانون الاحتفاظ بسجل محدود.</li></ol>
-<p><a class="button primary" href="mailto:classia.app@gmail.com?subject=طلب%20حذف%20حساب%20فسيلة&amp;body=السلام%20عليكم،%20أطلب%20حذف%20حساب%20فسيلة%20والبيانات%20المرتبطة%20به.%20أرسل%20هذا%20الطلب%20من%20البريد%20المستعمل%20في%20التطبيق.">إرسال طلب الحذف</a></p>
+<h2>الخطوات</h2><ol><li>اضغط زر إرسال الطلب أدناه.</li><li>إذا كان حسابك بالبريد، أرسل من البريد نفسه. وإذا كان برقم الهاتف، اذكر الرقم المستخدم وأرسل من بريد يمكنك استقبال الرد فيه. لا ترسل كلمة المرور.</li><li>سنؤكد استلام الطلب ونطلب أقل قدر من المعلومات اللازمة للتحقق.</li><li>بعد التحقق، نحذف الحساب والملف وحالة الوصول وإحصاءات التدريب المرسلة والبيانات المرتبطة به خلال 30 يوماً. تبقى سجلات التحقق من الشراء بلا رابط إلى حساب الدخول لمدة 30 يوماً، ثم تحذفها مهمة تعمل كل 15 دقيقة. حذف الحساب لا يطلب استرداداً مالياً ولا يحذف سجلات الشراء التي يحتفظ بها Google.</li></ol>
+<p><a class="button primary" href="mailto:classia.app@gmail.com?subject=طلب%20حذف%20حساب%20فسيلة&amp;body=السلام%20عليكم،%20أطلب%20حذف%20حساب%20فسيلة%20والبيانات%20المرتبطة%20به.%20يرجى%20إرشادي%20للتحقق%20من%20ملكية%20الحساب.">إرسال طلب الحذف</a></p>
+<h2>التحقق من حساب الهاتف أو البريد وكلمة المرور</h2>
+<p>سجّل الدخول ببيانات حساب فسيلة للحصول على مرجع تحقق صالح لمدة 24 ساعة، ثم أرسله إلى الدعم. تُرسل كلمة المرور مباشرة إلى خدمة مصادقة فسيلة لدى Supabase للتحقق فقط، ولا تُحفظ في هذه الصفحة ولا تُرسل إلى بريد الدعم. لا تؤدي هذه الخطوة إلى حذف الحساب، وسنؤكد معك نطاق الحذف قبل تنفيذه. لحساب Google، أرسل الطلب من بريد Google المرتبط بفسيلة؛ لا تدخل كلمة مرور Google هنا.</p>
+<p lang="fr" dir="ltr">Compte téléphone ou e-mail avec mot de passe : connectez-vous à Facila ci-dessous, puis envoyez la référence de vérification au support sous 24 heures. Le mot de passe est envoyé uniquement à l’authentification Supabase de Facila ; cette page ne le conserve pas. Aucune suppression automatique. Pour un compte Google, écrivez depuis l’adresse Google associée ; ne saisissez pas votre mot de passe Google ici.</p>
+<p lang="en" dir="ltr">For a phone or email/password account, sign in to Facila below and email the verification reference to support within 24 hours. Your password goes only to Facila’s Supabase authentication service and is not stored by this page. This does not delete anything. For Google sign-in, email support from the Google address linked to Facila; do not enter your Google password here.</p>
+<form id="verify-deletion" class="deletion-form">
+<label for="deletion-identity">رقم الهاتف أو البريد في فسيلة / Téléphone ou e-mail / Phone or email</label>
+<input id="deletion-identity" name="identity" type="text" dir="ltr" autocomplete="username" required maxlength="254">
+<label for="deletion-password">كلمة مرور فسيلة / Mot de passe Facila / Facila password</label>
+<input id="deletion-password" name="password" type="password" dir="ltr" autocomplete="off" required maxlength="512">
+<button class="button primary" type="submit">التحقق / Vérifier / Verify</button>
+</form>
+<p id="verification-status" role="status" aria-live="polite"></p>
+<div id="verified-request" hidden><p>مرجع التحقق / Référence / Reference: <bdi id="request-reference"></bdi></p>
+<p><a id="send-verified-request" class="button primary">إرسال المرجع إلى الدعم / Envoyer / Send</a></p>
+<p>إذا لم يفتح البريد، انسخ المرجع وأرسله إلى classia.app@gmail.com. / Si le lien ne fonctionne pas, copiez la référence dans un e-mail au support. / If the link does not open, copy the reference into an email to support.</p></div>
+<noscript><p>للتحقق من حساب الهاتف، فعّل JavaScript أو تواصل مع الدعم. / Activez JavaScript ou contactez le support. / Enable JavaScript or contact support.</p></noscript>
 <h2>البيانات الموجودة على الهاتف</h2><p>تقدّم التدريب محفوظ على الهاتف. لحذفه فوراً، امسح بيانات تطبيق فسيلة من إعدادات أندرويد أو أزل التطبيق. لإيقاف إرسال إحصاءات التدريب دون حذف الحساب، أوقف «مشاركة إحصاءات التدريب» من إعدادات التطبيق.</p>
-<p class="notice">إذا تعذر إرسال الرسالة من الزر، راسل <a href="mailto:classia.app@gmail.com">classia.app@gmail.com</a> من بريد الحساب واكتب «طلب حذف حساب فسيلة» في العنوان.</p>
-</main></body></html>
+<p class="notice">إذا تعذر إرسال الرسالة من الزر، راسل <a href="mailto:classia.app@gmail.com">classia.app@gmail.com</a> مع البريد أو رقم الهاتف الذي يعرّف حسابك، واكتب «طلب حذف حساب فسيلة» في العنوان.</p>
+</main><script type="module" src="deletion-verification.js"></script></body></html>

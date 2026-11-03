@@ -15,6 +15,11 @@
 }
 
 * { box-sizing: border-box; }
+.deletion-form { display: grid; gap: 12px; max-width: 600px; margin-block: 24px; }
+.deletion-form input { width: 100%; padding: 14px; font: inherit; border: 1px solid var(--line); border-radius: 12px; background: white; color: var(--ink); }
+.deletion-form button { border: 0; font: inherit; cursor: pointer; }
+.deletion-form button:disabled { opacity: .6; cursor: wait; }
+#request-reference { overflow-wrap: anywhere; }
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
